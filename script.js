@@ -1,7 +1,7 @@
-// Exemplo de dados das cartas
+// Dados das cartas
 const cards = [
-    { name: 'Carta 1', type: 'Tipo A', text: 'Texto da Carta 1', tags: ['Tag1', 'Tag2'] },
-    { name: 'Carta 2', type: 'Tipo B', text: 'Texto da Carta 2', tags: ['Tag2', 'Tag3'] },
+    { name: 'Náusea', type: 'menor', vinculo: 'Cambaleante (maior)', text: 'Impede uso de pushes enquanto estiver no local. Descartada quando sair do local.', tags: ['não letal', 'shock'] },
+    { name: 'Cambaleante', type: 'maior', vinculo: 'náusea (menor)', text: 'Impede o uso de pushes enquanto estiver no local. +2 na dificuldade de qualquer teste devido a confusão. Descartada assim que chegar em terra firme.', tags: ['não letal', 'shock'] },
     // Adicione mais cartas conforme necessário
 ];
 
@@ -16,7 +16,7 @@ function shuffleAndDraw() {
 // Função para exibir a carta
 function displayCard(card) {
     const cardContainer = document.getElementById('cardContainer');
-    cardContainer.innerHTML = `<h3>${card.name}</h3><p>${card.type}</p><p>${card.text}</p><p>Tags: ${card.tags.join(', ')}</p>`;
+    cardContainer.innerHTML = `<h3>${card.name}</h3><p>${card.type}</p><p>${card.vinculo}</p><p>${card.text}</p><p>Tags: ${card.tags.join(', ')}</p>`;
 }
 
 // Função para buscar carta por nome, tipo ou tag
