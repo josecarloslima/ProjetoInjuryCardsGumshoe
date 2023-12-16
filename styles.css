@@ -23,6 +23,7 @@ body {
 button {
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .search-container {
@@ -31,4 +32,26 @@ button {
 
 .filter-container {
     margin-top: 20px;
+}
+
+#filteredTable {
+    margin-top: 20px;
+    padding: 10px; /* Adiciona padding para a div que contém a tabela */
+}
+
+/* Adicione estilos para a tabela */
+#filteredTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#filteredTable th, #filteredTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#filteredTable th {
+    background-color: #f2f2f2;
 }
