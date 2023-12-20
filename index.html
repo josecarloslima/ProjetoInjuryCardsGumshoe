@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Injury Card - QuickShock</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="card" id="cardContainer">
+        <h2>Injury Card</h2>
+        <main class="card" id="cardContainer">
             <!-- Carta sorteada será exibida aqui -->
-        </div>
+        </main>
         <button data-action="shuffle">Embaralhar e Sortear</button>
 
         <div class="search-container">
@@ -24,15 +25,16 @@
             <button data-action="filterByType">Filtrar por Tipo</button>
             <button data-action="filterByTag">Filtrar por Tag</button>
         </div>
+    </div>
 
-        <div id="filteredTable"></div>
+    <div id="filteredTable"></div>
 
-        <footer id="creditos">
-            <p>&copy; 2023 - José Carlos Lima</p>
-        </footer>
+    <footer id="creditos">
+        <p>&copy; 2023 - José Carlos Lima</p>
+    </footer>
 
-        <script src="cartas.js" type="module"></script>
-        <script src="script.js" type="module"></script>
+    <script src="cartas.js" type="module"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>

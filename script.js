@@ -13,7 +13,13 @@ function shuffleAndDraw() {
 // Função para exibir a carta
 function displayCard(card) {
     const cardContainer = document.getElementById('cardContainer');
-    cardContainer.innerHTML = `<h3>${card.name}</h3><p>${card.type}</p><p>${card.vinculo}</p><p>${card.text}</p><p>Tags: ${card.tags.join(', ')}</p>`;
+    cardContainer.innerHTML = `
+    <h3 class="card-name">${card.name}</h3>
+    <p class="card-type">${card.type}</p>
+    <p class="card-vinculo">${card.vinculo}</p>
+    <p class="card-text">${card.text}</p>
+    <p class="card-tag">Tags: ${card.tags.join(', ')}</p>
+    `;
 }
 
 // Exibição inicial de uma carta
