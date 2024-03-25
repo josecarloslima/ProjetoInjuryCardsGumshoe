@@ -14,10 +14,10 @@ function shuffleAndDraw() {
 function displayCard(card) {
     const cardContainer = document.getElementById('cardContainer');
     cardContainer.innerHTML = `
-    <h3 class="card-name">${card.name}</h3>
-    <p class="card-type">${card.type}</p>
+    <h3 class="card-nome">${card.nome}</h3>
+    <p class="card-tipo">${card.tipo}</p>
     <p class="card-vinculo">${card.vinculo}</p>
-    <p class="card-text">${card.text}</p>
+    <p class="card-texto">${card.texto}</p>
     <p class="card-tag">Tags: ${card.tags.join(', ')}</p>
     `;
 }
@@ -28,7 +28,7 @@ shuffleAndDraw();
 // Adicionar ouvintes de eventos apenas uma vez
 document.querySelector('button[data-action="shuffle"]').addEventListener('click', shuffleAndDraw);
 document.querySelector('button[data-action="search"]').addEventListener('click', searchCard);
-document.querySelector('button[data-action="filterByType"]').addEventListener('click', () => filterBy('type'));
+document.querySelector('button[data-action="filterByType"]').addEventListener('click', () => filterBy('tipo'));
 document.querySelector('button[data-action="filterByTag"]').addEventListener('click', () => filterBy('tags'));
 
 // Função para buscar carta por nome, tipo ou tag

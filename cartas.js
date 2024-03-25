@@ -1,30 +1,30 @@
 const cards = [
     {
-        name: 'Enjoo de movimento',
-        type: '- menor -',
+        nome: 'Enjoo de movimento',
+        tipo: 'menor',
         vinculo: 'maldição de Poseidon (maior)',
-        text: 'Impede uso de pushes enquanto estiver em movimento. Descartada quando sair do veículo.',
+        texto: 'Impede uso de pushes enquanto estiver em movimento. Descartada quando sair do veículo.',
         tags: ['não letal', 'shock']
     },
     {
-        name: 'Maldição de Poseidon',
-        type: '- maior -',
+        nome: 'Maldição de Poseidon',
+        tipo: 'maior',
         vinculo: 'enjoo de movimento (menor)',
-        text: 'Impede uso de pushes enquanto estiver em movimento. -2 em todos os testes devido a confusão. Descartada quando sair do veículo.',
+        texto: 'Impede uso de pushes enquanto estiver em movimento. -2 em todos os testes devido a confusão. Descartada quando sair do veículo.',
         tags: ['não letal', 'shock']
     },
     {
-        name: 'Embriagado',
-        type: '- menor -',
+        nome: 'Embriagado',
+        tipo: 'menor',
         vinculo: 'intoxicado (maior)',
-        text: 'Sempre que precisar realizar um teste e falhar, deve tomar a pior decisão possível. Um controle parcial das decisões é possível com um teste de lesão (dif 6). -1 em todos os testes. Descartada depois de 2 horas sem ingerir mais álcool.',
+        texto: 'Sempre que precisar realizar um teste e falhar, deve tomar a pior decisão possível. Um controle parcial das decisões é possível com um teste de lesão (dif 6). -1 em todos os testes. Descartada depois de 2 horas sem ingerir mais álcool.',
         tags: ['não letal', 'shock']
     },
     {
-        name: 'Intoxicado',
-        type: '- maior -',
+        nome: 'Intoxicado',
+        tipo: 'maior',
         vinculo: 'embriagado (menor)',
-        text: 'Sempre que precisar realizar um teste e falhar, deve tomar a pior decisão possível. +2 em Tolls. -2 em todos os testes. Trocada por EMBRIAGADO depois de 2 horas sem ingerir mais álcool.',
+        texto: 'Sempre que precisar realizar um teste e falhar, deve tomar a pior decisão possível. +2 em Tolls. -2 em todos os testes. Trocada por EMBRIAGADO depois de 2 horas sem ingerir mais álcool.',
         tags: ['shock']
     },
 ];
